@@ -133,6 +133,7 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--teal-400);
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(16px);
@@ -219,7 +220,7 @@
   }
 
   /* ── SECTION WRAPPER ── */
-  section { padding: 7rem 3rem; }
+  section { padding: 6rem 3rem; }
   section:nth-child(even) { background: white; }
 
   .section-inner {
@@ -801,7 +802,7 @@
   @media (max-width: 768px) {
     nav { padding: 0 1.5rem; }
     .nav-links { display: none; }
-    section { padding: 5rem 1.5rem; }
+    section { padding: 4rem 1.5rem; }
     .hero { padding: 0 1.5rem 4rem; }
     .about-grid,
     .projects-grid,
@@ -822,7 +823,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#featured">Featured Project</a></li>
-    <li><a href="#projects">Additional Projects</a></li>
+    <li><a href="#project-usertesting">Additional Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education &amp; Certifications</a></li>
     <li><a href="#contributions">Contributions</a></li>
@@ -835,7 +836,7 @@
   <div class="hero-bg-text" aria-hidden="true">ReOps</div>
   <p class="hero-eyebrow">Research Program Manager / Research Operations Portfolio · 2026</p>
   <h1 class="hero-name">Lydia Iana<br></h1>
-  <p class="hero-sub">Senior UX Research Operations Program Manager specializing in building and scaling high-performing research operations across Fortune 500 companies.</p>
+  <p class="hero-sub">As a Senior UX Research Operations Program Manager, I walk into ambiguous challenges: no process, no playbook, no precedent and build systems that scale. Ten years doing this across Google, Cisco, Facebook, PayPal, and LinkedIn.</p>
   <div class="hero-tags">
     <span class="hero-tag">Vendor Management</span>
     <span class="hero-tag">Process Design</span>
@@ -858,19 +859,19 @@
     <div class="about-grid">
       <div class="about-card accent reveal">
         <p class="about-card-label">The short version</p>
-        <p class="about-card-text">Communication major turned research ops leader — proof that how you work with people matters as much as what you build. Born and raised in San Jose, CA. I gravitate toward problems without playbooks, because those are the ones worth solving.</p>
+        <p class="about-card-text">Every role I've taken had the same starting condition: a gap no one had formally owned. I've built recruiting programs, vendor governance frameworks, and research intake systems from scratch, at companies like Cisco, Google, Facebook, PayPal, and LinkedIn. The throughline isn't the industry or the team size. It's that I show up when structure doesn't exist yet, and leave something the next person can actually use.</p>
       </div>
       <div class="about-card reveal reveal-delay-1">
-        <p class="about-card-label">Communication style</p>
-        <p class="about-card-text">Documentation-first, proactive with updates, and always building relationships across teams before problems arise. I meet people where they are and translate complexity into clarity.</p>
+        <p class="about-card-label">How I work with people</p>
+        <p class="about-card-text">I build relationships with stakeholders, Legal, IT, and InfoSec before I need anything from them. I document decisions in real time so stakeholders don't have to ask twice. And when I socialize a new process, I meet teams where they are: in their onboarding, in their Slack channels, in their existing workflows, not in a one-off email they'll ignore.</p>
       </div>
       <div class="about-card reveal reveal-delay-2">
-        <p class="about-card-label">What drives me</p>
-        <p class="about-card-text">Unstructured problems are opportunities to build something lasting — something the next person can pick up and run with. I care about leaving systems better than I found them.</p>
+        <p class="about-card-label">What I'm known for</p>
+        <p class="about-card-text">Turning "we've always done it informally" into a documented, transferable, scalable process. At Cisco, that meant a 250% YoY increase in studies. At PayPal, it meant eliminating compliance risk that most of the team didn't know existed. The work is unglamorous. The impact isn't.</p>
       </div>
       <div class="about-card reveal reveal-delay-3">
-        <p class="about-card-label">Outside work</p>
-        <p class="about-card-text">Traveling, live music, reading, beaches, taking photos, and Disney. Always interested in learning something new — AI certifications, podcast appearances, community career ladders.</p>
+        <p class="about-card-label">Beyond the role</p>
+        <p class="about-card-text">I contribute to the ReOps community because I believe the field gets better when practitioners share what actually works. Two podcast appearances, a community-built career ladder, and a year-in-review piece, because if I can save someone else the ambiguity I started with, I will.</p>
       </div>
     </div>
   </div>
@@ -917,10 +918,10 @@
         <div style="background:var(--gray-50); border:1px solid var(--gray-100); border-radius:16px; padding:1.75rem; margin-bottom:1rem;">
           <p class="outcomes-label" style="margin-bottom:1rem;">How I approached it</p>
           <ul class="step-list">
-            <li><span class="step-dot"></span><span>Started with a Microsoft Form intake — quickly identified it created a new form per request rather than updating one source of truth, and iterated forward</span></li>
+            <li><span class="step-dot"></span><span>Started with a Microsoft Form intake, quickly identified it created a new form per request rather than updating one source of truth, and iterated forward</span></li>
             <li><span class="step-dot"></span><span>Explored MS Power BI to create dashboard reporting for leadership on project status and researcher bandwidth</span></li>
             <li><span class="step-dot"></span><span>Partnered with DPM to surface bandwidth data that shaped research strategy and managed stakeholder expectations</span></li>
-            <li><span class="step-dot"></span><span>Standardized the intake process and embedded it into onboarding — making it the default, not the exception</span></li>
+            <li><span class="step-dot"></span><span>Standardized the intake process and embedded it into onboarding, making it the default, not the exception</span></li>
           </ul>
         </div>
 
@@ -933,60 +934,84 @@
   </div>
 </section>
 
-<!-- ADDITIONAL PROJECTS -->
-<section id="projects">
+<!-- USERTESTING PROJECT -->
+<section id="project-usertesting">
   <div class="section-inner">
-    <p class="section-eyebrow reveal">Additional projects</p>
-    <h2 class="section-title reveal reveal-delay-1">The same pattern,<br>different contexts.</h2>
+    <p class="section-eyebrow reveal">Project · Recruitment Ops</p>
+    <h2 class="section-title reveal reveal-delay-1">Custom Recruiting<br>Program</h2>
 
-    <div class="projects-grid">
+    <div class="featured-project">
+      <div class="featured-left reveal">
+        <span class="featured-tag">UserTesting · 2015–2016</span>
+        <h3 class="featured-headline">Building a recruiting program from the ground up with no process, no templates, and no precedent</h3>
+        <p class="featured-challenge">"Custom recruiting had no structured process — I inherited an ambiguous challenge and built the foundation from scratch."</p>
 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-card-top">
-          <p class="card-eyebrow">UserTesting · 2015–2016</p>
-          <h3 class="card-title">Custom Recruiting Program</h3>
-          <span class="card-badge badge-amber">Recruitment Ops</span>
-        </div>
-        <div class="project-card-body">
-          <p class="card-challenge">"Custom recruiting had no structured process — I inherited an ambiguous mandate and built the foundation from the ground up."</p>
-          <ul class="mini-steps">
-            <li>Drew on prior recruiting experience to establish a working process immediately</li>
-            <li>Documented every action taken to convert into reusable templates later</li>
-            <li>Met proactively with stakeholders to capture tribal knowledge</li>
-            <li>Built detailed contact directories and participant quality databases</li>
-          </ul>
-          <div class="card-outcomes">
-            <span class="mini-pill">Invite &amp; confirmation templates</span>
-            <span class="mini-pill">RFQ templates</span>
-            <span class="mini-pill">Stakeholder contact directory</span>
-            <span class="mini-pill">Participant quality database</span>
-          </div>
+        <div class="outcomes-label">Key deliverables</div>
+        <div class="outcome-pills">
+          <span class="outcome-pill">Invite &amp; confirmation templates</span>
+          <span class="outcome-pill">RFQ templates</span>
+          <span class="outcome-pill">Stakeholder contact directory</span>
+          <span class="outcome-pill">Participant quality database</span>
         </div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-card-top">
-          <p class="card-eyebrow">PayPal · 2017–2019</p>
-          <h3 class="card-title">Vendor Onboarding &amp; Governance</h3>
-          <span class="card-badge badge-blue">Vendor Management</span>
-        </div>
-        <div class="project-card-body">
-          <p class="card-challenge">"Most people weren't following vendor onboarding rules — or didn't know them — creating compliance risk and costly setbacks."</p>
-          <ul class="mini-steps">
-            <li>Built a running question list; used it to drive structured meetings with Legal, IT, and InfoSec</li>
-            <li>Created and documented an end-to-end vendor onboarding process from scratch</li>
-            <li>Socialized the new process across teams via meetings and internal hubs</li>
-            <li>Embedded the process into new team member onboarding as the default</li>
+      <div class="featured-right reveal reveal-delay-2">
+        <div style="background:var(--gray-50); border:1px solid var(--gray-100); border-radius:16px; padding:1.75rem; margin-bottom:1rem;">
+          <p class="outcomes-label" style="margin-bottom:1rem;">How I approached it</p>
+          <ul class="step-list">
+            <li><span class="step-dot"></span><span>Drew on prior recruiting experience to establish a working process immediately</span></li>
+            <li><span class="step-dot"></span><span>Documented every action taken to convert into reusable templates later</span></li>
+            <li><span class="step-dot"></span><span>Met proactively with stakeholders to capture tribal knowledge</span></li>
+            <li><span class="step-dot"></span><span>Built detailed contact directories and a participant quality database for future studies</span></li>
           </ul>
-          <div class="card-outcomes">
-            <span class="mini-pill">SOW, MSA, RFQ templates</span>
-            <span class="mini-pill">Vendor capability registry</span>
-            <span class="mini-pill">Legal/IT/InfoSec relationships</span>
-            <span class="mini-pill">Documented, transferable process</span>
-          </div>
+        </div>
+
+        <div style="background:var(--teal-50); border:1px solid var(--teal-100); border-radius:12px; padding:1.25rem 1.5rem;">
+          <p class="about-card-label" style="color:var(--teal-600); margin-bottom:0.5rem;">Business impact</p>
+          <p style="font-size:14px; font-weight:300; color:var(--teal-800); line-height:1.65;">By documenting everything in real time and building a reusable asset library, the program became transferable — the next person could pick it up and run without starting over.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAYPAL PROJECT -->
+<section id="project-paypal">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Project · Vendor Management</p>
+    <h2 class="section-title reveal reveal-delay-1">Vendor Onboarding<br>&amp; Governance</h2>
+
+    <div class="featured-project">
+      <div class="featured-left reveal">
+        <span class="featured-tag">PayPal · 2017–2019</span>
+        <h3 class="featured-headline">Eliminating compliance risk by creating a vendor governance process no one knew was missing</h3>
+        <p class="featured-challenge">"Most people weren't following vendor onboarding rules — or didn't know them — creating compliance risk and costly setbacks."</p>
+
+        <div class="outcomes-label">Key deliverables</div>
+        <div class="outcome-pills">
+          <span class="outcome-pill">SOW, MSA, RFQ templates</span>
+          <span class="outcome-pill">Vendor capability registry</span>
+          <span class="outcome-pill">Legal/IT/InfoSec relationships</span>
+          <span class="outcome-pill">Documented, transferable process</span>
         </div>
       </div>
 
+      <div class="featured-right reveal reveal-delay-2">
+        <div style="background:var(--gray-50); border:1px solid var(--gray-100); border-radius:16px; padding:1.75rem; margin-bottom:1rem;">
+          <p class="outcomes-label" style="margin-bottom:1rem;">How I approached it</p>
+          <ul class="step-list">
+            <li><span class="step-dot"></span><span>Built a running question list and used it to drive structured meetings with Legal, IT, and InfoSec</span></li>
+            <li><span class="step-dot"></span><span>Created and documented an end-to-end vendor onboarding process from scratch</span></li>
+            <li><span class="step-dot"></span><span>Socialized the new process across teams via meetings and internal hubs</span></li>
+            <li><span class="step-dot"></span><span>Embedded the process into new team member onboarding as the default, not the exception</span></li>
+          </ul>
+        </div>
+
+        <div style="background:var(--teal-50); border:1px solid var(--teal-100); border-radius:12px; padding:1.25rem 1.5rem;">
+          <p class="about-card-label" style="color:var(--teal-600); margin-bottom:0.5rem;">Business impact</p>
+          <p style="font-size:14px; font-weight:300; color:var(--teal-800); line-height:1.65;">A process that had never formally existed was now documented, socialized, and embedded into onboarding — turning a compliance risk into a repeatable, auditable system trusted by Legal, IT, and InfoSec.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
