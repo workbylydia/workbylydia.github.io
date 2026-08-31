@@ -307,22 +307,34 @@
   .featured-left {}
 
   .featured-tag {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 5px 12px;
-    border-radius: 20px;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 9px;
+    padding: 9px 18px;
+    border-radius: 22px;
     background: var(--teal-50);
-    color: var(--teal-600);
     border: 1px solid var(--teal-100);
     margin-bottom: 1.25rem;
   }
 
+  .featured-tag-company {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--teal-600);
+  }
+
+  .featured-tag-dates {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--teal-400);
+    opacity: 0.75;
+  }
+
   .featured-headline {
     font-family: var(--serif);
-    font-size: clamp(28px, 3vw, 42px);
+    font-size: clamp(24px, 2.6vw, 36px);
     font-weight: 400;
     line-height: 1.15;
     letter-spacing: -0.02em;
@@ -957,7 +969,7 @@
 
     <div class="featured-project">
       <div class="featured-left reveal">
-        <span class="featured-tag">Cisco Systems · 2022–2024</span>
+        <span class="featured-tag"><span class="featured-tag-company">Cisco Systems</span><span class="featured-tag-dates">2022–2024</span></span>
         <h3 class="featured-headline">Centralized visibility for a research team operating in the dark</h3>
         <p class="featured-challenge">"There was no single place to track what research projects were in flight, who owned them, or how much bandwidth UX researchers had — requests came in informally with no visibility for leadership."</p>
 
@@ -1014,7 +1026,7 @@
 
     <div class="featured-project">
       <div class="featured-left reveal">
-        <span class="featured-tag">UserTesting · 2015–2016</span>
+        <span class="featured-tag"><span class="featured-tag-company">UserTesting</span><span class="featured-tag-dates">2015–2016</span></span>
         <h3 class="featured-headline">Building a recruiting program from the ground up with no process, no templates, and no precedent</h3>
         <p class="featured-challenge">"Custom recruiting had no structured process — I inherited an ambiguous challenge and built the foundation from scratch."</p>
 
@@ -1055,7 +1067,7 @@
 
     <div class="featured-project">
       <div class="featured-left reveal">
-        <span class="featured-tag">PayPal · 2017–2019</span>
+        <span class="featured-tag"><span class="featured-tag-company">PayPal</span><span class="featured-tag-dates">2017–2019</span></span>
         <h3 class="featured-headline">Eliminating compliance risk by creating a vendor governance process no one knew was missing</h3>
         <p class="featured-challenge">"Most people weren't following vendor onboarding rules — or didn't know them — creating compliance risk and costly setbacks."</p>
 
