@@ -694,6 +694,76 @@
     color: var(--gray-400);
   }
 
+  /* ── RECOMMENDATIONS ── */
+  .rec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .rec-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: 16px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s;
+  }
+
+  .rec-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  }
+
+  .rec-quote {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gray-900);
+    line-height: 1.7;
+    border-left: 2px solid var(--teal-300);
+    padding-left: 1rem;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+  }
+
+  .rec-attribution {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .rec-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--teal-50);
+    border: 1px solid var(--teal-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--teal-600);
+    flex-shrink: 0;
+  }
+
+  .rec-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-900);
+  }
+
+  .rec-role {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--gray-600);
+    line-height: 1.4;
+  }
+
   /* ── CONTACT ── */
   .contact-block {
     display: flex;
@@ -807,6 +877,7 @@
     .about-grid,
     .projects-grid,
     .misc-grid,
+    .rec-grid,
     .featured-project { grid-template-columns: 1fr; }
     .about-card.accent { grid-column: span 1; }
     .stat-grid { grid-template-columns: repeat(3, 1fr); }
@@ -827,6 +898,7 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education &amp; Certifications</a></li>
     <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#recommendations">Recommendations</a></li>
     <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
@@ -1166,6 +1238,56 @@
         <div>
           <a class="podcast-title" href="https://www.theresearchopsreview.com/p/a-year-in-review" target="_blank" rel="noopener">A Year in Review: What Shaped ResearchOps in 2025, and a Look Ahead to 2026</a>
           <p class="podcast-date">Published November 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOMMENDATIONS -->
+<section id="recommendations">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">In their words</p>
+    <h2 class="section-title reveal reveal-delay-1">What colleagues &amp;<br>clients say.</h2>
+    <div class="rec-grid">
+      <div class="rec-card reveal reveal-delay-1">
+        <p class="rec-quote">"Upon joining our team, she seamlessly integrated herself into our workflow and began implementing transformative changes... she developed a comprehensive playbook that consolidated all critical research information in one location. Lydia represents the rare combination of deep domain expertise and exceptional interpersonal skills."</p>
+        <div class="rec-attribution">
+          <div class="rec-avatar">SR</div>
+          <div>
+            <p class="rec-name">Steve Ricken</p>
+            <p class="rec-role">UX Research Leader — managed Lydia directly at Cisco</p>
+          </div>
+        </div>
+      </div>
+      <div class="rec-card reveal reveal-delay-2">
+        <p class="rec-quote">"Lydia has been instrumental to the recruiting operations team at PayPal. Her ability [to] create structure and processes has helped the different research teams make full use of the limited resources that we have... Lydia made this process painless — always delivering on what was promised."</p>
+        <div class="rec-attribution">
+          <div class="rec-avatar">NK</div>
+          <div>
+            <p class="rec-name">Niranjan Krishnamurthi</p>
+            <p class="rec-role">User Research Leader — worked with Lydia at PayPal</p>
+          </div>
+        </div>
+      </div>
+      <div class="rec-card reveal reveal-delay-3">
+        <p class="rec-quote">"Lydia is positive, detailed-focused, and extremely intelligent when it came to managing sophisticated projects for our most demanding Fortune 500 companies... she went above and beyond to manage recruitment, facilitate, and ensure all required assets were in place. The result: a $100K up-sell with UserTesting."</p>
+        <div class="rec-attribution">
+          <div class="rec-avatar">TK</div>
+          <div>
+            <p class="rec-name">Tim Kotyuk</p>
+            <p class="rec-role">AI Success Manager — worked alongside Lydia at UserTesting</p>
+          </div>
+        </div>
+      </div>
+      <div class="rec-card reveal reveal-delay-4">
+        <p class="rec-quote">"Lydia sets the bar for UX Research Operations. She is incredibly organized and detail-oriented... Lydia is also highly effective at navigating ambiguity, approaching it with a growth mindset. She would be an invaluable addition to any Research Ops team."</p>
+        <div class="rec-attribution">
+          <div class="rec-avatar">TW</div>
+          <div>
+            <p class="rec-name">Tamara Weinstein, Ph.D.</p>
+            <p class="rec-role">UX Research Leader — worked with Lydia on the same team</p>
+          </div>
         </div>
       </div>
     </div>
